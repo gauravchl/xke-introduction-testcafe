@@ -30,7 +30,7 @@
     "serve:build": "serve -s build",
     "e2e:ci": "testcafe chrome:headless e2e/*.js --app 'yarn serve:build' -r xunit:/tmp/test-results/res.xml",
     "e2e": "testcafe chrome e2e/*.js --app 'yarn serve:build'",
-    "e2e:github": "testcafe chrome:headless e2e/*.js --app 'yarn serve:build'"
+    "e2e:github": "testcafe chrome:headless e2e/*.js --app 'npm run serve:build'"
   },
   "eslintConfig": {
     "extends": "react-app"
